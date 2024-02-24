@@ -1,0 +1,6 @@
+Package: logovod
+Version: 1.0
+Maintainer: Eugene Hutorny <eugene@hutorny.in.ua>
+Architecture: source
+Description: Logger front-end for c++17 and newer
+Homepage: https://hutorny.in.ua/projects/logovod

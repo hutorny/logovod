@@ -1,0 +1,11 @@
+.cproject
+.project
+.settings/
+/Clang-15-17/
+/Clang-15-20/
+/G++-11-17/
+/G++-12-17/
+/G++-12-20/
+/G++-13-20/
+/G++-13-23/
+build/
