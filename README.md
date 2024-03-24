@@ -27,7 +27,7 @@ logovod features
     // or with I/O stream shifts
     Log::info{} << "Hello Logovod I/O stream style";
     // or with std::format
-    Log::notice::format("Hello {} format style", "Logovod");
+    Log::notice{}.format("Hello {} format style", "Logovod");
 ```
 
 ## Design Documentation

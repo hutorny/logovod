@@ -32,7 +32,7 @@ As the example suggests, writer and level are fixed at compile time.
 
 #### Run-time configurable loggers
 By design, configuration of a logger is done via its category. For the compile time configuration functions simply return constants.
-To enable run time configuration, a category should return same variables instead:
+To enable run time configuration, a category should return some variables instead:
 
 ```C++
 struct MyCategory : category {
@@ -89,8 +89,10 @@ using LogB = logger<MyCategoryB>;
 using LogC = logger<MyCategoryC>;
 using LogD = logger<MyCategoryD>;
 
-If a category is configured at run-time for a specific level or writer, that specific settings are used. Otherwise the base category settings are used.
 ```
+
+If a category is configured at run-time for a specific level or writer, that specific settings are used. 
+Otherwise the base category settings are used.
 
 ### Logging
 Although the logger depends on a category, this dependency is loose, and one can start using logger with a simple or a default category, deferring detailed category outline to some later time. 
@@ -115,7 +117,7 @@ There is one caveat related to the first variant:
 
 Ambiguous syntax is treated as declaration of variable i: `Log::d i;`
 
-### Left shift style
+#### Left shift style
 
 ```C++
     Log::d{} << "Construct" << ' ' << "then" << ' ' << "log";
@@ -132,7 +134,7 @@ This option requires availability of `std::format`
 ```
 
 #### Emitter reuse and deferred use
-Invoke and form style assume messages are closed and emitted before return. The left shift style makes possible deferred message emitting 
+Invoke and format style assume messages are closed and emitted before return. The left shift style makes possible deferred message emitting 
 
 ```C++
     Log::d d{}; // emitter is constructed
