@@ -13,7 +13,7 @@ using namespace logovod;
 
 struct MyCategory : category {
     static constexpr std::string_view tag = "MYTAG";
-    static constexpr auto prolog() noexcept {
+    static constexpr sink_types::prologer prolog() noexcept {
         return sink::prolog::common;
     }
 };

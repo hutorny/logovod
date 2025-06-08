@@ -20,7 +20,7 @@ struct FileCategory : logovod::category {
 
 using Log = logovod::logger<FileCategory>;
 
-int main(int, char *argv[]) {
+int main() {
     using namespace logovod::tests;
     using namespace logovod;
     std::filesystem::remove_all("/tmp/loggertest");
@@ -31,6 +31,3 @@ int main(int, char *argv[]) {
     Eval::i("grep",  num, "/tmp/loggertest/fstream.log");
     return 0;
 }
-
-
-

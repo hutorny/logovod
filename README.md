@@ -45,12 +45,12 @@ logovod features
 
 |  | c++17  | c++20  | c++23  |
 |---|---|---|---|
-| g++-11  | PASS  | PASS  | N/A  |
-| g++-12  | PASS  | PASS  | N/A  |
+| g++-11  | PASS  | PASS  | PASS |
+| g++-12  | PASS  | PASS  | PASS |
 | g++-13  | PASS  | PASS  | PASS |
-| clang++-15  | **NOTE 1**   | **NOTE 1**  | N/A  |
-
-**NOTE 1** clang++-15 does not fully support source location. A workaround exists.
+| g++-14  | PASS  | PASS  | PASS |
+| clang++-18  | PASS  | PASS  | PASS |
+| clang++-19  | PASS  | PASS  | PASS |
 
 ### Android
 

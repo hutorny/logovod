@@ -19,7 +19,7 @@ struct SyslogCategory : logovod::category {
 using Log = logovod::logger<SyslogCategory>;
 
 
-int main(int, char *argv[]) {
+int main() {
     using namespace logovod::tests;
     using namespace logovod;
     logovod::sink::syslog::open(nullptr);
