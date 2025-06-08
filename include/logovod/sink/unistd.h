@@ -16,7 +16,7 @@ template<int FD>
 void fd(std::string_view message, std::string_view, attributes) noexcept {
     auto written = ::write(FD, message.data(), message.size());
     while (written > 0 && static_cast<std::size_t>(written) < message.size() && message.size() != 0) {
-        message.remove_prefix(written);
+        message.remove_prefix(static_cast<size_t>(written));
         written = ::write(FD, message.data(), message.size());
     }
 }
