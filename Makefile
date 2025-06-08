@@ -49,6 +49,6 @@ help:
 	@echo 'CXXS provides list of compilers, e.g.: CXXS="g++-12 g++-13 clang++-15"' 
 	@echo 'STDS - list of C++ standards, e.g.:    STDS="c++17 c++-20"'
 	@echo For example
-	@echo 'make -j$$(nproc) run-tests CXXS="g++-11 g++-12 g++-13 clang++-15" STDS="c++17 c++20"'
+	@echo 'make -j$$(nproc) run-tests CXXS="g++-12 g++-13 g++-14 clang++-18 clang++-19" STDS="c++17 c++20 c++23"'
 
 .PHONY: help build tests install run-tests examples
