@@ -50,7 +50,7 @@ struct optional_sink : Base {
   static void sink(sink::bundle bundle) noexcept {
       prolog_ = bundle.prolog;
       writer_ = bundle.writer;
-      epilog_ = bundle.epliog;
+      epilog_ = bundle.epilog;
   }
   static void sink(prologer p, writer_type w, epiloger e) noexcept {
       prolog_ = p;
