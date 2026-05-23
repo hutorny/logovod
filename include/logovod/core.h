@@ -50,7 +50,7 @@ struct basic_sink_types {
     using epiloger = std::size_t(*)(attributes, std::basic_ostream<CharT, Traits>&) noexcept;
     prologer prolog;
     writer_type writer;
-    epiloger epliog;
+    epiloger epilog;
 };
 
 namespace sink {
@@ -534,7 +534,7 @@ struct runtime_sink : Base {
   static void sink(sink::bundle bundle) noexcept {
       prolog_ = bundle.prolog;
       writer_ = bundle.writer;
-      epilog_ = bundle.epliog;
+      epilog_ = bundle.epilog;
   }
   static void sink(prologer p, writer_type w, epiloger e) noexcept {
       prolog_ = p;
