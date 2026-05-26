@@ -20,8 +20,8 @@ build:
 	
 
 install: #!   Installs headers at DESTDIR
-	install -d $(DESTDIR:%=%/logovod)
-	cp -r include/logovod $(DESTDIR:%=%/logovod)
+	install -d $(DESTDIR)
+	cp -r include/logovod $(DESTDIR)
 
 package: #!   Assembles deb package
 	@rm -rf $(BUILDDIR)/$(LOGOVOD_DEB)
