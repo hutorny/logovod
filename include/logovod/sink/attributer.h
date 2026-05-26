@@ -10,6 +10,7 @@
 #pragma once
 
 #include <logovod/core.h>
+#include <logovod/chrono.h>
 #include <chrono>
 #include <filesystem>
 
